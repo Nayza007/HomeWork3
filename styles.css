@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f2f5;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.container_main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column;
+  gap: 40px;
+}
+
+/* left */
+.box_sideleft {
+  width: 496px;
+  text-align: center;
+}
+
+.sideleft_top {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  color: #1877f2;
+  font-weight: 600;
+}
+
+.sideleft_bottom {
+  font-size: 2rem;
+}
+
+/* right */
+.box_sideright {
+  background-color: #fff;
+  border: 1px solid rgb(234, 228, 228);
+  border-radius: 8px 8px;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.32);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 450px;
+  /* height: 420px; */
+  padding: 20px;
+  gap: 20px;
+}
+
+/* form */
+.box_form01,
+.box_form02,
+.box_form03 {
+  width: 90%;
+  border-radius: 8px 8px;
+}
+
+.box_form01 input,
+.box_form02 input,
+.box_form03 input {
+  font-size: 20px;
+  padding: 17px;
+  width: 100%;
+  border: 0.5px solid rgb(234, 228, 228);
+  border-radius: 8px 8px;
+}
+
+.box_form01 input,
+.box_form02 input {
+  opacity: 0.8;
+  outline: none;
+}
+
+hr {
+  width: 90%;
+  border: 1px solid rgb(244, 238, 238);
+}
+
+.box_form03 input {
+  font-weight: 600;
+  color: white;
+  background-color: #1877f2;
+}
+
+.box_form04 a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #1877f2;
+}
+
+.box_form05 {
+  width: 100%;
+  text-align: center;
+}
+
+.box_form05 button {
+  width: 50%;
+  padding-block: 15px;
+  color: #fff;
+  background-color: rgb(34, 195, 34);
+  border: 0.5px solid rgb(234, 228, 228);
+  border-radius: 8px 8px;
+  font-size: 17px;
+  font-weight: 600;
+  padding-inline: 3px;
+}
+
+.box_a p {
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+
+  padding-top: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+/* active */
+input[type="text"]:focus {
+  border: 1px solid #1877f2;
+  box-shadow: -2px 2px 5px 1px rgba(24, 119, 242, 0.34);
+}
+input[type="password"]:focus {
+  border: 1px solid #1877f2;
+  box-shadow: -2px 2px 5px 1px rgba(24, 119, 242, 0.34);
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(58, 181, 58);
+  transition: 0.2s ease;
+}
+p a:hover {
+  text-decoration: underline;
+}
+.box_form04 a:hover {
+  text-decoration: underline;
+}
